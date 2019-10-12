@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+header.row.blanco {
+    margin-top: 40px;
+}
+.cabecera{
+    display: flex;
+    height: 200px;
+}
+input.buscador{
+    height: 30px;
+    margin-top: 30px;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.log-reg ul{
+    display: flex;
+    justify-content: space-around;
+}
+.log-reg ul li{
+    list-style-type: none;
+}
+.log-reg ul li a{
+    color: gray;
+    
+}
+.carrito{
+    background-color: aquamarine;
+}
+.carrito a{
+    width: 250px;
+    background-color: burlywood;
+    border: 2px solid 
+}
+.menu{
+    padding: 20px;
+}
+nav{
+    height: 50px;
+}
+.menu ul{
+    overflow: hidden;
+    background-color: black;
+    height: 45px;
+}
+.menu ul li{
+    float: left;
+    width: 20%;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+}
