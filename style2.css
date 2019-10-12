@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header.row.blanco {
+    margin-top: 40px;
+}
+.cabecera{
+    display: flex;
+    height: 200px;
+}
+input.buscador{
+    height: 30px;
+    margin-top: 30px;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.log-reg ul{
+    display: flex;
+    justify-content: space-around;
+}
+.log-reg ul li{
+    list-style-type: none;
+}
+.log-reg ul li a{
+    color: gray;
+    
+}
+.carrito{
+    background-color: aquamarine;
+}
+.carrito a{
+    width: 250px;
+    background-color: burlywood;
+    border: 2px solid 
+}
+.menu{
+    padding: 20px;
+}
+nav{
+    height: 50px;
+}
+.menu ul{
+    overflow: hidden;
+    background-color: black;
+    height: 45px;
+}
+.menu ul li{
+    float: left;
+    width: 20%;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;  
+}
+section h3{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    height: 30px;;
+}
+
+form p label{
+    display: block
+}
+form input{
+    width: 100%;
+}
+#submit{
+    background: transparent;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 6px;
+    height: 40px;
+    margin-top: 10px;
+}
+#submit:hover{
+    background-color: orange;
+    color: white;
+}
+/*footer*/
+div.pie{
+    background-color: gray;
+    overflow: hidden;
+}
+div.uno{
+    float: left;
+}
+.uno h6{
+    color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.uno ul li{
+    list-style-type: none;
+    color: white;
+}
+.uno ul li a{
+    color: white;
+}
+.dos h6{
+    color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.dos ul li{
+    list-style-type: none;
+    color: white;
+}
+.dos ul li a{
+    color: white;
+}
+.dos img{
+    width: 30px;
+    height: 30px;
+    margin-left: 45px;
+}
+.dos input{
+    margin-left: 40px;
+    height: 20px;
+}
