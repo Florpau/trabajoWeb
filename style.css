@@ -1,14 +1,21 @@
 *{
     box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 body{
     margin: 0;
     padding: 0;
 
 }
+ .container-fluid {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header.row.blanco {
     margin-top: 40px;
+    width: 980px;
 }
 .cabecera{
     display: flex;
@@ -27,7 +34,7 @@ div.buscador input{
 }
 
 div.buscador i{
-    padding: 5px
+    padding: 5px;
 }
 
 }
@@ -44,7 +51,7 @@ div.buscador i{
 }
 .log-reg ul li a{
     color: gray;
-    
+    font-size: 13px;
 }
 .carrito{
     background-color: aquamarine;
@@ -52,7 +59,8 @@ div.buscador i{
 .carrito a{
     width: 250px;
     background-color: burlywood;
-    border: 2px solid 
+    border: 2px solid;
+     
 }
 .menu{
     padding: 20px;
@@ -88,14 +96,16 @@ div.carrousel img:hover{
 }
 aside.categorias{
     margin-top: 30px;
-    padding-left: 30px;
+    
 }
 aside.categorias ul li{
     list-style-type: none;
 }
 aside.categorias ul li a{
-    text-decoration: none;
-    color: grey;
+       color: grey;
+}
+.container {
+    width: 250px;
 }
 article.producto{
     overflow: hidden;
@@ -112,23 +122,28 @@ article.producto img:hover{
 }
 article.producto img{
     width: 75%;
-    height: 250px;
+    height: 190px;
     margin-top: 30px;
     margin-left: 45px;
     margin-bottom: 18px;
 }
 article.producto span{
-    margin-left: 43px;
-    margin-right: 63px;
-    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 35px;
+    font-size: 15px;
+    
 }
 article.producto a{
     text-decoration: none;
     background:salmon;
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 25px;
     border-radius:5px;
     color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    margin-left: 105px;
 }
 div.pie{
     background-color: gray;
