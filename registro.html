@@ -21,7 +21,7 @@
                             <div class="log-reg offset-md-1 col-md-4">
                                 <ul>
                                     <li><a href="login.html">INICIAR SESIÓN</a></li>
-                                    <li>|</li>
+                                    
                                     <li><a href="registro.html">CREAR CUENTA</a></li>
                                 </ul>
                                 <div class="carrito offset-md-2 col-md-9">
@@ -42,29 +42,34 @@
                     </div>
                  </header>            
         <section>
-            <h3>INCIO/MI CUENTA/CREAR CUENTA</h3>
+            <h3>INICIO/MI CUENTA/CREAR CUENTA</h3>
             <div class="row">
                 <div class="formulario offset-md-3 col-md-6">
                     <form action="validar.php" method="POST">
                         <p>
                             <label for="nombre">Nombre</label>
-                            <input id="nombre" type="text" name="nombre">
+                            <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre aquí">
                         </p>
                         <p>
                             <label for="email">E-Mail:</label>
-                            <input id="email" type="email" name="email">
+                            <input id="email" type="email" name="email" placeholder="ejemplo: usuario@ejemplo.com">
                         </p>
                         <p>
                             <label for="telefono">Teléfono (opcional):</label>
-                            <input id="telefono" type="text" name="telefono">
+                            <input id="telefono" type="text" name="telefono" placeholder="código de área sin 0 y sin 15">
+                        </p>
+                        <p>
+                            <label for="Sexo">Sexo</label>
+                            <input  type="radio" name="Sexo" value="F">Femenino
+                            <input  type="radio" name="Sexo" value="M">Masculino
                         </p>
                         <p>
                             <label for="contraseña">Contraseña:</label>
-                            <input id="password" type="password" name="contraseña">
+                            <input id="password" type="password" name="contraseña" placeholder="Ingrese la contraseña">
                         </p>
                         <p>
                             <label for="confir pass">Confirmar Contraseña:</label>
-                            <input id="password" type="password" name="confir pass">
+                            <input id="password" type="password" name="confir pass" placeholder="Confirme la contraseña">
                         </p>
                         <p>
                             <input id="submit" type="submit" value="Enviar">
