@@ -129,3 +129,23 @@ div.uno{
     margin-left: 40px;
     height: 20px;
 }
+.fab fa-facebook{
+    content: f39e;
+    
+  }
+  
+  
+  .fab fa-instagram{
+    content:f16d;
+    
+  }
+
+.iconredes{
+    width: 241px;
+    padding-left: 45px;
+}
+.iconredes a {
+    width: 30px;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    }
