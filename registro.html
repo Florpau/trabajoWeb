@@ -14,20 +14,38 @@
         <div class="container-fluid contenedor">
                 <header class="row blanco">
                     <div class="cabecera col-md-12">
-                        <input type="text"class="buscador offset-md-1 col-md-2">
-                            <div class="logo offset-md-2 col-md-2">
-                                <img src="imagenes/logonew.png" alt="logo del sitio">
+                        <div class="offset-md-1 col-md-2">
+                            <div class="row buscador">
+                                <i class="fas fa-search" style="color:grey"></i>
+                                <input type="text"class=""> 
                             </div>
+<<<<<<< HEAD
                             <div class="log-reg offset-md-1 col-md-4">
                                 <ul>
                                     <li><a href="login.html">INICIAR SESIÓN</a></li>
-                                    <li>|</li>
+                                    
                                     <li><a href="registro.html">CREAR CUENTA</a></li>
                                 </ul>
                                 <div class="carrito offset-md-2 col-md-9">
                                      <a href="#">Al carrito</a>
                                 </div>
                             </div>  
+=======
+                        </div>
+                        <div class="logo offset-md-2 col-md-2">
+                            <img src="imagenes/logonew.png" alt="logo del sitio">
+                        </div>
+                        <div class="log-reg offset-md-1 col-md-4">
+                            <ul>
+                                <li><a href="login.html">INICIAR SESIÓN</a></li>
+                                <li>|</li>
+                                <li><a href="registro.html">CREAR CUENTA</a></li>
+                            </ul>
+                            <div class="carrito offset-md-2 col-md-9">
+                                <a href="#">Al carrito</a>
+                            </div>
+                        </div>  
+>>>>>>> c9b17c5d80c248ed000c93ac0882dc893352b834
                     </div>
                     <div class="menu col-md-12">
                             <nav>
@@ -42,29 +60,38 @@
                     </div>
                  </header>            
         <section>
-            <h3>INCIO/MI CUENTA/CREAR CUENTA</h3>
+            <h3>INICIO/MI CUENTA/CREAR CUENTA</h3>
             <div class="row">
                 <div class="formulario offset-md-3 col-md-6">
                     <form action="validar.php" method="POST">
                         <p>
                             <label for="nombre">Nombre</label>
-                            <input id="nombre" type="text" name="nombre">
+                            <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre aquí">
                         </p>
                         <p>
                             <label for="email">E-Mail:</label>
-                            <input id="email" type="email" name="email">
+                            <input id="email" type="email" name="email" placeholder="ejemplo: usuario@ejemplo.com">
                         </p>
                         <p>
                             <label for="telefono">Teléfono (opcional):</label>
-                            <input id="telefono" type="text" name="telefono">
+                            <input id="telefono" type="text" name="telefono" placeholder="código de área sin 0 y sin 15">
+                        </p>
+                        <p>
+                            <label for="FechaNac">Fecha de Nacimiento:</label>
+                            <input type="date" name="FechaNac" min="1930-01-01" max="2019-01-01" step="2">
+                        </p>
+                        <p>
+                            <label for="Sexo">Sexo</label>
+                            <input  type="radio" name="Sexo" value="F">Femenino
+                            <input  type="radio" name="Sexo" value="M">Masculino
                         </p>
                         <p>
                             <label for="contraseña">Contraseña:</label>
-                            <input id="password" type="password" name="contraseña">
+                            <input id="password" type="password" name="contraseña" placeholder="Ingrese la contraseña">
                         </p>
                         <p>
                             <label for="confir pass">Confirmar Contraseña:</label>
-                            <input id="password" type="password" name="confir pass">
+                            <input id="password" type="password" name="confir pass" placeholder="Confirme la contraseña">
                         </p>
                         <p>
                             <input id="submit" type="submit" value="Enviar">
