@@ -18,6 +18,7 @@ header.row.blanco {
 div.buscador{
     border: solid 1px grey;
     border-radius: 5px;
+    margin-top: 20px;
 
 }
 div.buscador input{
