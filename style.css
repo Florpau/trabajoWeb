@@ -14,9 +14,22 @@ header.row.blanco {
     display: flex;
     height: 200px;
 }
-input.buscador{
-    height: 30px;
-    margin-top: 30px;
+
+div.buscador{
+    border: solid 1px grey;
+    border-radius: 5px;
+
+}
+div.buscador input{
+    float: left;
+    border:0;
+    
+}
+
+div.buscador i{
+    padding: 5px
+}
+
 }
 .logo img{
     width: 150px;
