@@ -53,7 +53,7 @@
                     <form action="validar.php" method="POST">
                         <p>
                             <label for="nombre">Nombre</label>
-                            <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre aquí">
+                            <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre completo aquí..">
                         </p>
                         <p>
                             <label for="email">E-Mail:</label>
@@ -67,11 +67,11 @@
                             <label for="FechaNac">Fecha de Nacimiento:</label>
                             <input type="date" name="FechaNac" min="1930-01-01" max="2019-01-01" step="2">
                         </p>
-                        <p>
+                        <span>
                             <label for="Sexo">Sexo</label>
-                            <p><input  type="radio" name="Sexo" value="F">Femenino
-                            <input  type="radio" name="Sexo" value="M">Masculino
-                        </p>
+                            <input  type="radio" name="Sexo" value="F"checked> Femenino
+                            <input  type="radio" name="Sexo" value="M"> Masculino
+                        </span>
                         <p>
                             <label for="contraseña">Contraseña:</label>
                             <input id="password" type="password" name="contraseña" placeholder="Ingrese la contraseña">
