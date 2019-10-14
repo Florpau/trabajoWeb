@@ -28,8 +28,8 @@ div.buscador{
     margin-top: 20px;
 }
 div.buscador input{
-    float: left;
-    border:0;  
+    border:0;
+    width: 130px;  
 }
 
 div.buscador i{
@@ -81,5 +81,83 @@ nav{
     text-decoration: none;
     color: white;
     text-align: center;
-    
+       
 }
+
+/* estilo de los links de las preguntas*/
+main section a{
+    text-decoration: none;
+    color: black;
+}
+
+main section a:hover{
+    font-weight: 600;
+    color:black
+}
+
+.linkcorreo{
+    color: blue;
+}
+.linkcorreo:hover{
+    color:blue;
+}
+
+/*footer*/
+div.pie{
+    background-color: gray;
+    overflow: hidden;
+}
+div.uno{
+    float: left;
+}
+.uno h6{
+    color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.uno ul li{
+    list-style-type: none;
+    color: white;
+}
+.uno ul li a{
+    color: white;
+}
+.dos h6{
+    color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.dos ul li{
+    list-style-type: none;
+    color: white;
+}
+.dos ul li a{
+    color: white;
+}
+.dos img{
+    width: 30px;
+    height: 30px;
+    margin-left: 45px;
+}
+.dos input{
+    margin-left: 40px;
+    height: 20px;
+}
+.fab fa-facebook{
+    content: f39e;
+    
+  }
+  
+  .fab fa-instagram{
+    content:f16d;
+  }
+
+.iconredes{
+    width: 241px;
+    padding-left: 45px;
+}
+.iconredes a {
+    width: 30px;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    }

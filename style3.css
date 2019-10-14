@@ -26,8 +26,8 @@ div.buscador{
     margin-top: 20px;
 }
 div.buscador input{
-    float: left;
-    border:0;  
+    border:0; 
+    width: 130px; 
 }
 
 div.buscador i{

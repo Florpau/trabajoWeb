@@ -29,8 +29,8 @@ div.buscador{
 
 }
 div.buscador input{
-    float: left;
     border:0;
+    width: 130px;
     
 }
 
