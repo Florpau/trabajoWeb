@@ -166,3 +166,17 @@ div.uno{
     text-align: center;
     margin: 0px 10px 0px 10px;
     }
+
+.contraseñaolv{
+    text-decoration: underline;
+    color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+input.recordarme{
+    display: flex;
+    text-align: left;
+
+}
+
