@@ -7,16 +7,12 @@ body{
     padding: 0;
 
 }
- .container-fluid {
-    width: 980px;
+ .container {
     margin-left: auto;
     margin-right: auto;
 }
 
-header.row.blanco {
-    margin-top: 40px;
-    width: 980px;
-}
+
 .cabecera{
     display: flex;
     height: 200px;
@@ -54,15 +50,8 @@ div.buscador i{
     color: gray;
     font-size: 13px;
 }
-.carrito{
-    background-color: aquamarine;
-}
-.carrito a{
-    width: 250px;
-    background-color: burlywood;
-    border: 2px solid;
-     
-}
+
+
 .menu{
     padding: 20px;
 }
@@ -105,9 +94,8 @@ aside.categorias ul li{
 aside.categorias ul li a{
        color: grey;
 }
-.container {
-    width: 250px;
-}
+
+
 article.producto{
     overflow: hidden;
     width: 30%;
@@ -206,3 +194,39 @@ div.uno{
     text-align: center;
     margin: 0px 10px 0px 10px;
     }
+.barra-menu {
+display: none;
+}
+#submit {
+    background: transparent;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 6px;
+    width: 80%;
+    }  
+
+#submit:hover{
+    background-color: orange;
+    color: white;
+}
+    
+    @media screen and (max-width: 768px) {
+
+        aside {
+            display: none;
+        }
+#barr {
+    display: none;
+}
+
+.barra-menu {
+    display: block;
+   
+}
+#submit {
+width: 100%;
+}
+#chango {
+    display: none;
+}
+   }

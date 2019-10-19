@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
     <title>Objetos diseño</title>
 </head>
 <body>
-    <div class="container-fluid contenedor">
+    <div class="container contenedor">
         <header class="row blanco">
+
+    
             <div class="cabecera col-md-12">
                 <div class="offset-md-1 col-md-2">
                     <div class="row buscador">
@@ -28,14 +31,38 @@
                         <li>|</li>
                         <li><a href="registro.html">CREAR CUENTA</a></li>
                     </ul>
+                   
+                   
                     <div class="carrito offset-md-2 col-md-9">
-                        <a href="#">Al carrito</a>
-                    </div>
-                </div>  
+           
+                         <p>
+                            <i id="chango" class="fas fa-cart-arrow-down"></i>
+                                <input id="submit" type="submit" value="MI CARRITO">
+                         </p>
+                  </div>
+                
+                
+                
+                </div> 
+
             </div>
+           <div class="row">
+            <div class="btn-group barra-menu offset-2 col-8">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                      CATEGORIAS
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                      <button class="dropdown-item" type="button">NOSOTROS</button>
+                      <button class="dropdown-item" type="button">PRODUCTOS</button>
+                      <button class="dropdown-item" type="button">FAQ</button>
+                      <button class="dropdown-item" type="button">CONTACTO</button>
+                    </div>
+                  </div>
+           </div>
+           
             <div class="menu col-md-12">
-                    <nav>
-                       <ul>
+                  <nav>
+                       <ul id="barr">
                            <li><a href="index.html">HOME</a></li>
                            <li><a href="#">NOSOTROS</a></li>
                            <li><a href="">PRODUCTOS</a></li>
@@ -50,7 +77,7 @@
          </header>
        <section>
             <main class="row">
-            <aside class="categorias col-md-2">
+            <aside class="categorias col-md-2" >
                 <h2>Categorías</h2>
                 <ul>
                     <li><a href="">MACETAS</a></li>
@@ -61,7 +88,8 @@
                 </ul>
             </aside>
             <div class="productos col-md-10">
-                <article class="producto">
+                <div class="row">
+                <article class="producto col-md-3 col-5">
                     <img src="imagenes/espejo-hp.jpg" alt="espejo harry">
                     <div class="container">
                             <span>Espejo Reliquia HP</span>
@@ -69,7 +97,7 @@
                             <a href="">+ Carrito</a>
                     </div>
                 </article>  
-                <article class="producto">
+                <article class="producto col-md-3 col-5">
                     <img src="imagenes/cuadro9-3-4.jpg" alt="cuadro  harry">
                     <div class="container">
                             <span>Cuadro Est. 9-3/4</span>
@@ -77,7 +105,7 @@
                             <a href="">+ Carrito</a>
                     </div>
                 </article>
-                <article class="producto">
+                <article class="producto col-md-3 col-5">
                     <img src="imagenes/almo-got.jpg" alt="almohadon got">
                     <div class="container">
                             <span>Almohadon GOT</span>
@@ -85,7 +113,7 @@
                             <a href="">+ Carrito</a>
                     </div>
                 </article>
-                <article class="producto">
+                <article class="producto col-md-3 col-5">
                     <img src="imagenes/cuadro-got.jpg" alt="cuadro got">
                     <div class="container">
                             <span>Cuadro Valar M/D</span>
@@ -93,7 +121,7 @@
                             <a href="">+ Carrito</a>
                     </div>
                 </article>
-                <article class="producto">
+                <article class="producto col-md-3 col-5">
                     <img src="imagenes/macetas-aereas.jpg" alt="set macetas">
                     <div class="container">
                             <span>Masetas aéreas x5</span>
@@ -101,7 +129,7 @@
                             <a href="">+ Carrito</a>
                     </div>
                 </article>
-                <article class="producto">
+                <article class="producto col-md-3 col-5">
                     <img src="imagenes/cafe-set.jpg" alt="set de café">
                     <div class="container">
                             <span>Set de café x6</span>
@@ -110,36 +138,41 @@
                     </div>
                 </article>
             </div>
-       </section>
-    </div>
-       <footer>
-        <div class="pie">
-            <div class="row">
-                <div class="uno col-md-4">
-                    <h6>CONTACTANOS</h6>
-                    <ul>
-                        <li><a href="ventas@tucasa.com">ventas@tucasa.com</a></li>
-                        <li>SHOWROOM PALERMO</li>
-                        <li>DIRECCIÓN:Costa Rica 3900, timbre 2, CABA</li>
-                        <li>HORARIOS: Miércoles a Domingos de 15 a 19hs</li>
-                    </ul>
-                </div>
-                <div class="dos col-md-4">
-                    <h6>REDES SOCIALES</h6>
-                    <div class="iconredes">
-                    <a  href="https://facebook.com" <i class="fab fa-facebook-f" style="color:white"></i></a>
-                    <a  href="https://instagram.com" <i class="fab fa-instagram" style="color: white"></i></a>
-                    </div>
-                    <h6>ENTERATE LAS ÚLTIMAS NOVEDADES!</h6>
-                    <!--quiero poner un campo para que el usuario complete su e-mail-->
-                    <input type="text"class="newsletter">
-                </div>
-                <div class="tres">
             </div>
-           </div>
-        </div>
-    
-       </footer>
+            </main>
+        </section>
+    </div>
+
+       <div class="conteiner-fluid">    
+        <footer>
+            <div class="pie">
+                <div class="row">
+                    <div class="uno col-md-4">
+                        <h6>CONTACTANOS</h6>
+                        <ul>
+                            <li><a href="ventas@tucasa.com">ventas@tucasa.com</a></li>
+                            <li>SHOWROOM PALERMO</li>
+                            <li>DIRECCIÓN:Costa Rica 3900, timbre 2, CABA</li>
+                            <li>HORARIOS: Miércoles a Domingos de 15 a 19hs</li>
+                        </ul>
+                    </div>
+                    <div class="dos col-md-4">
+                        <h6>REDES SOCIALES</h6>
+                        <div class="iconredes">
+                        <a  href="https://facebook.com" <i class="fab fa-facebook-f" style="color:white"></i></a>
+                        <a  href="https://instagram.com" <i class="fab fa-instagram" style="color: white"></i></a>
+                        </div>
+                        <h6>ENTERATE LAS ÚLTIMAS NOVEDADES!</h6>
+                        <!--quiero poner un campo para que el usuario complete su e-mail-->
+                        <input type="text"class="newsletter">
+                    </div>
+                    <div class="tres">
+                </div>
+               </div>
+            </div>
+        
+           </footer>
+ </div>
     
 </body>
 </html>

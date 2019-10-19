@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style4.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style4.css">
     <title>Preguntas Frecuentes</title>
 </head>
 <body>
-    <div class="container-fluid contenedor">
+    <div class="container contenedor">
         <header class="row blanco">
             <div class="cabecera col-md-12">
                 <div class="offset-md-1 col-md-2">
@@ -29,13 +29,32 @@
                         <li><a href="registro.html">CREAR CUENTA</a></li>
                     </ul>
                         <div class="carrito offset-md-2 col-md-9">
-                             <a href="#">Al carrito</a>
+                            <p>
+                                <i  id="chango"  class="fas fa-cart-arrow-down"></i>
+                                <input id="submit" type="submit" value="MI CARRITO">
+                         </p>     
+                            
                         </div>
                     </div>  
             </div>
-            <div class="menu col-md-12">
+            
+            <div class="row">
+                <div class="btn-group barra-menu offset-2 col-8">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                          CATEGORIAS
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                          <button class="dropdown-item" type="button">NOSOTROS</button>
+                          <button class="dropdown-item" type="button">PRODUCTOS</button>
+                          <button class="dropdown-item" type="button">FAQ</button>
+                          <button class="dropdown-item" type="button">CONTACTO</button>
+                        </div>
+                      </div>
+               </div>
+            
+               <div class="menu col-md-12">
                     <nav>
-                       <ul>
+                       <ul id="barr">
                            <li><a href="index.html">HOME</a></li>
                            <li><a href="nosotros.html">NOSOTROS</a></li>
                            <li><a href="">PRODUCTOS</a></li>
@@ -46,6 +65,7 @@
             </div> 
        
         </header>
+        <div class="container">
         <main class="row">
             <section class="col-md-12">
                 <a >¿Cómo hago para comprar en la tienda online?</a>
@@ -61,8 +81,9 @@
                 <p id="pregunta2">¡Sí! Actualmente está habilitado nuestro Local de Palermo como Punto de Retiro. Avanzá con tu Compra, elegí retirar por el local y unos días después, cuando tu Pedido esté disponible para que lo retires vas a recibir un mail con tu Código de Retiro.</p>
                 <hr>
                 <a >¿Dónde se encuentra el local?</a>
+                
                 <p id="pregunta3">Nuestro local se encuentra en Costa Rica 3900, timbre 2, Palermo (Capital Federal).</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.9320194500233!2d-58.41960053278322!3d-34.59154718854779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e3cbf5af7%3A0xb4247fb590cc2f0!2sCosta%20Rica%203900%2C%20C1176%20CABA!5e0!3m2!1ses-419!2sar!4v1571014485073!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe id="map-goo"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.9320194500233!2d-58.41960053278322!3d-34.59154718854779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7e3cbf5af7%3A0xb4247fb590cc2f0!2sCosta%20Rica%203900%2C%20C1176%20CABA!5e0!3m2!1ses-419!2sar!4v1571014485073!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 <hr>
                 <a >¿Cuánto cuesta el envío?</a>
                 <p id="pregunta4">Si tu compra supera el monto de $ 5000, accedes a ¡Envío Gratis a todo el País! Podes ver el costo del envío de tu compra en el Calculador de Envío de cada producto ingresando el código postal del destino o dentro de tu Bolsa (Carrito) de Compras. El costo depende del peso del tamaño paquete, del peso y volumen del mismo y del domicilio de entrega.</p>
@@ -82,7 +103,10 @@
                 <a href="#top">Volver arriba</a>
             </section>
         </main>
+        </div>
     </div>
+
+    <div class="conteiner-fluid"> 
     <footer>
             <div class="pie">
                 <div class="row">
@@ -110,5 +134,6 @@
                 </div>
             </div>
         </footer>
+        </div>
 </body>
 </html>
