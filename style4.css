@@ -7,10 +7,14 @@ body{
     padding: 0;
 
 }
+
 .container {
    
     margin-left: auto;
     margin-right: auto;
+}
+header.row.blanco{
+    margin-top: 40px;
 }
 
 .cabecera{
@@ -25,7 +29,7 @@ div.buscador{
 }
 div.buscador input{
     border:0;
-    width: 130px;  
+    width: 80%;  
 }
 
 div.buscador i{
@@ -76,6 +80,9 @@ nav{
 }
 
 /* estilo de los links de las preguntas*/
+section {
+    text-align: justify;
+}
 main section a{
     text-decoration: none;
     color: black;
@@ -94,6 +101,9 @@ main section a:hover{
 }
 
 /*footer*/
+footer {
+    margin-top: 40px;
+}
 div.pie{
     background-color: gray;
     overflow: hidden;
@@ -191,4 +201,7 @@ width: 100%;
     display: none;
 }
 
+.log-reg ul{
+    display: none;
+ }
    }

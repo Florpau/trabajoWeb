@@ -11,6 +11,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+header.row.blanco{
+    margin-top: 40px;
+}
 
 .cabecera{
     display: flex;
@@ -96,6 +99,9 @@ form input{
     color: white;
 }
 /*footer*/
+footer {
+    margin-top: 40px;
+}
 div.pie{
     background-color: gray;
     overflow: hidden;
@@ -172,14 +178,14 @@ input.recordarme{
 .barra-menu {
     display: none;
 }
-#submit {
+#mi-carrito {
     background: transparent;
     color: orange;
     border: 2px solid orange;
     border-radius: 6px; 
     width: 80%;
 }
-#submit:hover {
+#mi-carrito:hover {
     background-color: orange;
     color: white;
 }
@@ -193,10 +199,14 @@ input.recordarme{
         display: block;
       
     }
-    #submit {
+    #mi-carrito {
     width: 100%;
     }
     #chango {
         display: none;
     }
+    
+.log-reg ul{
+    display: none;
+ }
        }
