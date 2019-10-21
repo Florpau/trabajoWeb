@@ -172,8 +172,10 @@ div.uno{
 
 input.recordarme{
     display: flex;
-    text-align: left;
-
+    text-align: justify;
+    width: 450px;
+    float: right;
+    margin-top: 7px;
 }
 .barra-menu {
     display: none;
@@ -209,4 +211,13 @@ input.recordarme{
 .log-reg ul{
     display: none;
  }
-       }
+ input.recordarme{
+    width: 240px;
+    float: right
+ }  
+ }
+ @media screen and (max-width:576px){
+    input.recordarme{
+        width: 421px;
+    }
+}
