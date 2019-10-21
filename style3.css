@@ -207,10 +207,12 @@ div.uno{
  }
 
  #val{
-     width: 250px;
+     width: 400px;
+ }
+ div.buscador{
+     width: 100%;
  }
 }
-
 @media screen and (max-width:576px){
     #val{
         width: 400px;
