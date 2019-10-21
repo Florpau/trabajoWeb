@@ -24,11 +24,13 @@ div.buscador{
     border: solid 1px grey;
     border-radius: 5px;
     margin-top: 20px;
-
+    padding:0;
 }
 div.buscador input{
     border:0;
-    width: 130px;
+    width: 80%;
+    border-radius: 5px;
+    padding-left:0;  
 }
 
 div.buscador i{
