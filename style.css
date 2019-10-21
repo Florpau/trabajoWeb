@@ -247,7 +247,7 @@ display: none;
    
 }
 #submit {
-width: 100%;
+display: none;
 }
 #chango {
     display: none;

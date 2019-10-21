@@ -204,7 +204,7 @@ input.recordarme{
       
     }
     #mi-carrito {
-    width: 100%;
+    display: none;
     }
     #chango {
         display: none;
