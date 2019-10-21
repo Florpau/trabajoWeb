@@ -263,6 +263,9 @@ width: 100%;
  .log-reg ul{
     display: none;
  }
+ article.producto span{
+     font-size: 11px;
+ }
     }
 
  
