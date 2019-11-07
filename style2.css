@@ -24,11 +24,13 @@ div.buscador{
     border: solid 1px grey;
     border-radius: 5px;
     margin-top: 20px;
-
+    padding:0;
 }
 div.buscador input{
     border:0;
-    width: 130px;
+    width: 80%;
+    border-radius: 5px;
+    padding-left:0;  
 }
 
 div.buscador i{
@@ -172,8 +174,10 @@ div.uno{
 
 input.recordarme{
     display: flex;
-    text-align: left;
-
+    text-align: justify;
+    width: 450px;
+    float: right;
+    margin-top: 7px;
 }
 .barra-menu {
     display: none;
@@ -200,7 +204,7 @@ input.recordarme{
       
     }
     #mi-carrito {
-    width: 100%;
+    display: none;
     }
     #chango {
         display: none;
@@ -209,4 +213,13 @@ input.recordarme{
 .log-reg ul{
     display: none;
  }
-       }
+ input.recordarme{
+    width: 240px;
+    float: right
+ }  
+ }
+ @media screen and (max-width:576px){
+    input.recordarme{
+        width: 421px;
+    }
+}

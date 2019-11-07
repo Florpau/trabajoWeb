@@ -23,10 +23,13 @@ div.buscador{
     border: solid 1px grey;
     border-radius: 5px;
     margin-top: 20px;
+    padding:0;
 }
 div.buscador input{
-    border:0; 
-    width: 130px; 
+    border:0;
+    width: 80%;
+    border-radius: 5px;
+    padding-left:0;  
 }
 
 div.buscador i{
@@ -85,6 +88,9 @@ form p label{
 }
 form input{
     width: 100%;
+}
+#val{
+    width: 455px;
 }
 #submit{
     background: transparent;
@@ -189,7 +195,7 @@ div.uno{
    
 }
 #mi-carrito {
-    width: 100%;
+    display: none;
 
 }
 #chango {
@@ -199,4 +205,16 @@ div.uno{
 .log-reg ul{
     display: none;
  }
+
+ #val{
+     width: 400px;
+ }
+ div.buscador{
+     width: 100%;
+ }
+}
+@media screen and (max-width:576px){
+    #val{
+        width: 400px;
+    }
 }
