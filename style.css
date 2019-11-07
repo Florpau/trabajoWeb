@@ -78,14 +78,7 @@ nav{
     text-align: center;
     
 }
-div.carrousel img{
-    width: 100%;
-    transition: 3s;
-}
-div.carrousel img:hover{
-    filter:saturate(5);
-    
-}
+
 aside.categorias{
     margin-top: 30px;
     
@@ -101,7 +94,6 @@ aside.categorias ul li a{
 article.producto{
     overflow: hidden;
     width: 30%;
-    /*  background-color: aquamarine;*/
     float: left;
     margin-top: 20px;
     margin-left: 2.5%;
@@ -112,8 +104,8 @@ article.producto img:hover{
 
 }
 article.producto img{
-    width: 75%;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     margin-top: 30px;
     margin-left: 45px;
     margin-bottom: 18px;
@@ -232,11 +224,11 @@ display: none;
     font-size: 13px;
 }*/
     
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-        aside {
+ aside {
             display: none;
-        }
+}
 #barr {
     display: none;
 }
