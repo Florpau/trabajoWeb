@@ -112,10 +112,7 @@ article.producto a:hover{
 footer {
     margin-top: 40px;
 }
-div.pie{
-    background-color: gray;
-    overflow: hidden;
-}
+
 
 /*media query*/    
 @media screen and (max-width: 768px) {

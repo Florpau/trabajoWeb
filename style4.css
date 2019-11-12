@@ -28,6 +28,21 @@ background-color:#68ECA3;
 }
 
 /* estilo de los links de las preguntas*/
+.titulo-faq{
+    margin-top: 10%;
+}
+.banner-comprar img{
+    width: 491px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner-mdp img{
+    width: 491px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 section {
     text-align: justify;
     margin: 15px;
@@ -53,10 +68,7 @@ main section a:hover{
 footer {
     margin-top: 40px;
 }
-div.pie{
-    background-color: gray;
-    overflow: hidden;
-}
+
 
 
  @media screen and (max-width: 768px) {
