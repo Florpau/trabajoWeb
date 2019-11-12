@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 body{
     margin: 0;
@@ -15,96 +15,58 @@ header.row.blanco {
     margin-top: 40px;
 }
 
-.cabecera{
-    display: flex;
-    height: 200px;
-}
-
-div.buscador{
-    border: solid 1px grey;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding:0;
-}
-div.buscador input{
-    border:0;
-    width: 80%;
-    border-radius: 5px;
-    padding-left:0;  
-}
-
-div.buscador i{
-    padding: 5px;
-}
-
-
-.logo img{
-    width: 150px;
-    height: 150px;
-}
-.log-reg ul{
-    display: flex;
-    justify-content: space-around;
-}
-.log-reg ul li{
-    list-style-type: none;
-}
-.log-reg ul li a{
-    color: gray;
-    font-size: 13px;
-}
-
-
-.menu{
-    padding: 20px;
-}
-nav{
-    height: 50px;
-}
-.menu ul{
-    overflow: hidden;
-    background-color: black;
-    height: 45px;
-}
-.menu ul li{
-    float: left;
-    width: 20%;
-    list-style-type: none;
-    margin-top: 10px;
-}
-.menu ul li a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
+a.navbar-brand{
+    margin-left: 50px;
     
 }
-
+div.collapse ul li{
+    margin-left: 50px;
+  }
+.dropdown-item:hover{
+background-color:#68ECA3;
+}
+.dropdown-item{
+    color: white;
+}
+.list-group{
+    margin-top: 20px;
+}
+.productos{
+    float: left;
+}
 aside.categorias{
     margin-top: 30px;
-    
+    border: 1px solid rgba(0,0,0,.125);
 }
 aside.categorias ul li{
     list-style-type: none;
+    
 }
 aside.categorias ul li a{
        color: grey;
+       
+}
+h2.titulo-categorias{
+    text-align: center;
+    margin-top: 20px;
+}
+ul.menu-cat li{
+    margin: 5px;
 }
 
-
-article.producto{
+/*article.producto{
     overflow: hidden;
     width: 30%;
     float: left;
     margin-top: 20px;
     margin-left: 2.5%;
     height: 350px;
-}
-article.producto img:hover{
+}*/
+/*article.producto img:hover{
     filter: grayscale(80%);
 
-}
-article.producto img{
+}*/
+/*article.producto img{
     width: 200px;
     height: 200px;
     margin-top: 30px;
@@ -116,8 +78,8 @@ article.producto span{
     margin-right: 30px;
     font-size: 12px;
     
-}
-article.producto a{
+}*/
+/*article.producto a{
     text-decoration: none;
     background: #68ECA3;
     width: 85px;
@@ -129,11 +91,19 @@ article.producto a{
     text-align: center;
     font-size: 13px;
     margin-left: 105px;
-}
-article.producto a:hover{
+}*/
+/*article.producto a:hover{
     background: transparent;
     color: #68ECA3;
+}*/
+.card{
+    margin: 30px;
 }
+.btn{
+    background: #68ECA3;
+    border: 2px solid #68ECA3;
+}
+
 footer {
     margin-top: 40px;
 }
@@ -141,62 +111,7 @@ div.pie{
     background-color: gray;
     overflow: hidden;
 }
-div.uno{
-    float: left;
-}
-.uno h6{
-    color: white;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.uno ul li{
-    list-style-type: none;
-    color: white;
-}
-.uno ul li a{
-    color: white;
-}
-.dos h6{
-    color: white;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.dos ul li{
-    list-style-type: none;
-    color: white;
-}
-.dos ul li a{
-    color: white;
-}
-.dos img{
-    width: 30px;
-    height: 30px;
-    margin-left: 45px;
-}
-.dos input{
-    margin-left: 40px;
-    height: 20px;
-}
-.fab fa-facebook{
-    content: f39e;
-    
-  }
-  
-  
-  .fab fa-instagram{
-    content:f16d;
-    
-  }
 
-.iconredes{
-    width: 241px;
-    padding-left: 50px;
-}
-.iconredes a {
-    width: 30px;
-    text-align: center;
-    margin: 0px 10px 0px 10px;
-    }
 .barra-menu {
 display: none;
 }
