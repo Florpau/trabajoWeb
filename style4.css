@@ -1,85 +1,30 @@
 *{
     box-sizing: border-box;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 body{
     margin: 0;
     padding: 0;
 
 }
-
-.container {
-   
-    margin-left: auto;
-    margin-right: auto;
-}
-header.row.blanco{
+/*menu barra*/
+header.row.blanco {
     margin-top: 40px;
 }
-
-.cabecera{
-    display: flex;
-    height: 200px;
+a.navbar-brand{
+    margin-left: 50px;
 }
-
-div.buscador{
-    border: solid 1px grey;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding:0;
+div.collapse ul li{
+    margin-left: 50px;
+  }
+.dropdown-item:hover{
+background-color:#68ECA3;
 }
-div.buscador input{
-    border:0;
-    width: 80%;
-    border-radius: 5px;
-    padding-left:0;  
-}
-
-div.buscador i{
-    padding-left: 6px;
-}
-
-.logo img{
-    width: 150px;
-    height: 150px;
-}
-.log-reg ul{
-    display: flex;
-    justify-content: space-around;
-}
-.log-reg ul li{
-    list-style-type: none;
-}
-.log-reg ul li a{
-    color: gray;
-    font-size: 13px;
-}
-
-
-
-.menu{
-    padding: 20px;
-}
-nav{
-    height: 50px;
-}
-.menu ul{
-    overflow: hidden;
-    background-color: black;
-    height: 45px;
-}
-.menu ul li{
-    float: left;
-    width: 20%;
-    list-style-type: none;
-    margin-top: 10px;
-}
-.menu ul li a{
-    display: block;
-    text-decoration: none;
+.dropdown-item{
     color: white;
-    text-align: center;
-       
+}
+.list-group{
+    margin-top: 20px;
 }
 
 /* estilo de los links de las preguntas*/
@@ -112,78 +57,6 @@ div.pie{
     background-color: gray;
     overflow: hidden;
 }
-div.uno{
-    float: left;
-}
-.uno h6{
-    color: white;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.uno ul li{
-    list-style-type: none;
-    color: white;
-}
-.uno ul li a{
-    color: white;
-}
-.dos h6{
-    color: white;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.dos ul li{
-    list-style-type: none;
-    color: white;
-}
-.dos ul li a{
-    color: white;
-}
-.dos img{
-    width: 30px;
-    height: 30px;
-    margin-left: 45px;
-}
-.dos input{
-    margin-left: 40px;
-    height: 20px;
-}
-.fab fa-facebook{
-    content: f39e;
-    
-  }
-  
-  .fab fa-instagram{
-    content:f16d;
-  }
-
-.iconredes{
-    width: 241px;
-    padding-left: 45px;
-}
-.iconredes a {
-    width: 30px;
-    text-align: center;
-    margin: 0px 10px 0px 10px;
-    }
-
-.barra-menu {
-    display: none;
-        }
-
-#submit {
-     background: transparent;
-     color: orange;
-     border: 2px solid orange;
-     border-radius: 6px;
-     width: 80%;
-            }  
-
-
- #submit:hover{
-     background-color: orange;
-     color: white;
-            }
 
 
  @media screen and (max-width: 768px) {

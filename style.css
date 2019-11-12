@@ -11,6 +11,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+/*menu barra*/
 header.row.blanco {
     margin-top: 40px;
 }
@@ -31,10 +32,12 @@ background-color:#68ECA3;
 .list-group{
     margin-top: 20px;
 }
+/*seccion productos*/
 .productos{
     float: left;
 }
-aside.categorias{
+/*sin efecto - eliminar??*/
+/*aside.categorias{
     margin-top: 30px;
     border: 1px solid rgba(0,0,0,.125);
 }
@@ -54,19 +57,19 @@ ul.menu-cat li{
     margin: 5px;
 }
 
-/*article.producto{
+article.producto{
     overflow: hidden;
     width: 30%;
     float: left;
     margin-top: 20px;
     margin-left: 2.5%;
     height: 350px;
-}*/
-/*article.producto img:hover{
+}
+article.producto img:hover{
     filter: grayscale(80%);
 
-}*/
-/*article.producto img{
+}
+article.producto img{
     width: 200px;
     height: 200px;
     margin-top: 30px;
@@ -78,8 +81,8 @@ article.producto span{
     margin-right: 30px;
     font-size: 12px;
     
-}*/
-/*article.producto a{
+}
+article.producto a{
     text-decoration: none;
     background: #68ECA3;
     width: 85px;
@@ -91,11 +94,13 @@ article.producto span{
     text-align: center;
     font-size: 13px;
     margin-left: 105px;
-}*/
-/*article.producto a:hover{
+}
+article.producto a:hover{
     background: transparent;
     color: #68ECA3;
 }*/
+
+/*productos*/
 .card{
     margin: 30px;
 }
@@ -103,7 +108,7 @@ article.producto span{
     background: #68ECA3;
     border: 2px solid #68ECA3;
 }
-
+/*footer*/
 footer {
     margin-top: 40px;
 }
@@ -112,34 +117,7 @@ div.pie{
     overflow: hidden;
 }
 
-.barra-menu {
-display: none;
-}
-#submit {
-    background: transparent;
-    color: orange;
-    border: 2px solid orange;
-    border-radius: 6px;
-    width: 80%;
-    }  
-
-#submit:hover{
-    background-color: orange;
-    color: white;
-}
-/*
-#masProductos {
-    background: #68ECA3;
-    width: 300px;
-    height: 25px;
-    border-radius:5px;
-    color: white;
-    border: 2px solid #68ECA3;
-    display: inline-block;
-    text-align: center;
-    font-size: 13px;
-}*/
-    
+/*media query*/    
 @media screen and (max-width: 768px) {
 
  aside {
