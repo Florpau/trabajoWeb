@@ -1,86 +1,44 @@
 *{
     box-sizing: border-box;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 body{
     margin: 0;
     padding: 0;
+
 }
-.container {
-   
+ .container {
     margin-left: auto;
     margin-right: auto;
 }
+/*menu barra*/
 header.row.blanco {
     margin-top: 40px;
 }
-.cabecera{
-    display: flex;
-    height: 200px;
-}
 
-div.buscador{
-    border: solid 1px grey;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding:0;
-}
-div.buscador input{
-    border:0;
-    width: 80%;
-    border-radius: 5px;
-    padding-left:0;  
-}
-
-div.buscador i{
-    padding: 5px
-}
-
-.logo img{
-    width: 150px;
-    height: 150px;
-}
-.log-reg ul{
-    display: flex;
-    justify-content: space-around;
-}
-.log-reg ul li{
-    list-style-type: none;
-}
-.log-reg ul li a{
-    color: gray;
-    font-size: 13px;
-}
-
-.menu{
-    padding: 20px;
-}
-nav{
-    height: 50px;
-}
-.menu ul{
-    overflow: hidden;
-    background-color: black;
-    height: 45px;
-}
-.menu ul li{
-    float: left;
-    width: 20%;
-    list-style-type: none;
-    margin-top: 10px;
-}
-.menu ul li a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
+a.navbar-brand{
+    margin-left: 50px;
     
 }
-section h3{
-    font-size: 15px;
-    margin-left: 20px;
-    margin-bottom: 25px;
-    height: 30px;;
+div.collapse ul li{
+    margin-left: 50px;
+  }
+.dropdown-item:hover{
+background-color:#68ECA3;
+}
+.dropdown-item{
+    color: white;
+}
+.list-group{
+    margin-top: 20px;
+}
+.btn{
+    background: #68ECA3;
+    border: 2px solid #68ECA3;
+}
+/*cuerpo*/
+.encabezado{
+    margin-top: 5%;
 }
 
 form p label{
@@ -94,97 +52,21 @@ form input{
 }
 #submit{
     background: transparent;
-    color: orange;
-    border: 2px solid orange;
+    color: #68ECA3;
+    border: 2px solid #68ECA3;
     border-radius: 6px;
     height: 40px;
     margin-top: 10px;
 }
 #submit:hover{
-    background-color: orange;
+    background-color: #68ECA3;
     color: white;
 }
 /*footer*/
 footer {
     margin-top: 40px;
 }
-div.pie{
-    background-color: gray;
-    overflow: hidden;
-}
-div.uno{
-    float: left;
-}
-.uno h6{
-    color: white;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.uno ul li{
-    list-style-type: none;
-    color: white;
-}
-.uno ul li a{
-    color: white;
-}
-.dos h6{
-    color: white;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.dos ul li{
-    list-style-type: none;
-    color: white;
-}
-.dos ul li a{
-    color: white;
-}
-.dos img{
-    width: 30px;
-    height: 30px;
-    margin-left: 45px;
-}
-.dos input{
-    margin-left: 40px;
-    height: 20px;
-}
-.fab fa-facebook{
-    content: f39e;
-    
-  }
-  
-  
-  .fab fa-instagram{
-    content:f16d;
-    
-  }
-
-.iconredes{
-    width: 241px;
-    padding-left: 45px;
-}
-.iconredes a {
-    width: 30px;
-    text-align: center;
-    margin: 0px 10px 0px 10px;
-    }
-
-.barra-menu {
-    display: none;
-}
-#mi-carrito {
-    background: transparent;
-    color: orange;
-    border: 2px solid orange;
-    border-radius: 6px;
-    width: 80%;
-  ;
-}
-#mi-carrito:hover {
-    background-color: orange;
-    color: white;
-}
-
+/*media query*/
 @media screen and (max-width: 768px) {
 
 #barr {
