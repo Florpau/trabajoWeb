@@ -33,7 +33,14 @@ background-color:#68ECA3;
     margin-top: 20px;
 }
 /*seccion productos*/
-.productos{
+h2{
+    background-color: black;
+    color: white;
+    margin-top:30px;
+    text-align: center;
+    padding: 4px;
+}
+.card{
     float: left;
 }
 /*sin efecto - eliminar??*/
@@ -110,7 +117,8 @@ article.producto a:hover{
 }
 /*footer*/
 footer {
-    margin-top: 40px;
+    margin-top: 100px;
+    border-top: 1px dotted #a0a0a0;
 }
 
 
