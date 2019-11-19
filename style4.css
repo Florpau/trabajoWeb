@@ -32,6 +32,10 @@ background-color:#68ECA3;
 }
 
 /* estilo de los links de las preguntas*/
+.contenidofaq{
+    width: 80%;
+    margin-left: 10%;
+}
 .titulo-faq{
     margin-top: 10%;
 }
@@ -50,8 +54,9 @@ background-color:#68ECA3;
 section {
     text-align: justify;
     margin: 15px;
+}.contenidofaq{
+    margin-top:90px;
 }
-
 main section a{
     text-decoration: none;
     color: black;
@@ -94,14 +99,18 @@ display: none;
     display: none;
 }
 #map-goo {
-    display: none;
+    width: 100%;
 }
-
 .log-reg ul{
     display: none;
  }
 .logo{
     margin-top:20px
 }
+   .contenidofaq{
+       width: 90%;
+       margin-left: 5%;
+     
    }
-
+ }
+  

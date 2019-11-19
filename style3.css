@@ -47,6 +47,9 @@ form p label{
 form input{
     width: 100%;
 }
+.texcontenido{
+    text-align: justify;
+}
 #val{
     width: 455px;
 }
@@ -88,12 +91,22 @@ footer {
 .log-reg ul{
     display: none;
  }
-
+.texcontenido{
+    width: 80%;
+    margin-left: 10%;
+}
+h3{
+    margin-left: 10%;
+}
  #val{
      width: 400px;
  }
  div.buscador{
      width: 100%;
+ }
+ div.formulario{
+     width: 80%;
+     margin-left: 10%;
  }
 }
 @media screen and (max-width:576px){

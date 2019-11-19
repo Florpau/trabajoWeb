@@ -110,6 +110,10 @@ input.recordarme{
 .log-reg ul{
     display: none;
  }
+ div.formulario{
+     width: 80%;
+     margin-left: 10%;
+ }
  input.recordarme{
     width: 240px;
     float: right
