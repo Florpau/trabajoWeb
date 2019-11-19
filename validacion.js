@@ -2,7 +2,7 @@
  window.addEventListener('load', function(){
               
     //detectar cuando toco el boton de registro (se envía el formulario)
-     var botonRegistro = document.querySelector("button.Registrarme");
+     var botonRegistro = document.querySelector("button#submit");
      botonRegistro.addEventListener('click',function(){
       
       //tomar los datos del formulario
