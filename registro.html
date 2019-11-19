@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style3.css">
+    <script src="validacion.js"></script>
     <title>Wabi-Sabi Deco</title>
 </head>
 <body>
@@ -73,57 +74,63 @@
                      </div>
             <div class="row">
                 <div class="formulario offset-md-3 col-md-6">
-                    <form action="validar.php" method="POST">
-                        <p>
-                            <label for="nombre">Nombre</label>
-                            <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre completo aquí..">
-                        </p>
-                        <p>
-                            <label for="email">E-Mail:</label>
-                            <input id="email" type="email" name="email" placeholder="ejemplo: usuario@ejemplo.com">
-                        </p>
-                        <p>
-                            <label for="telefono">Teléfono (opcional):</label>
-                            <input id="telefono" type="text" name="telefono" placeholder="código de área sin 0 y sin 15">
-                        </p>
-                        <p>
-                            <label for="FechaNac">Fecha de Nacimiento:</label>
-                            <input type="date" name="FechaNac" min="1930-01-01" max="2019-01-01" step="2">
-                        </p>
-                        <span>
-                            <label for="Sexo">Sexo</label>
-                            <br>
+                  <form action="validar.php" method="POST">
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre completo aquí..">
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorNombre" ></span>
+                    </p>
+                    <p>
+                        <label for="email">E-Mail:</label>
+                        <input id="email" type="email" name="email" placeholder="ejemplo: usuario@ejemplo.com">
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorEmail" ></span>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input id="telefono" type="text" name="telefono" placeholder="código de área sin 0 y sin 15">
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorTelefono" ></span>
+                    </p>
+                    <p>
+                        <label for="FechaNac">Fecha de Nacimiento:</label>
+                        <input type="date" name="FechaNac" min="1930-01-01" max="2019-01-01" step="2">
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorFechaNac" ></span>
+                    </p>
+                    <span>
+                        <label for="Sexo">Sexo</label>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Sexo" id="femenino" value="F" >
+                            <span style="color: #ffa81c; font-size: 11px;" class="errorSexoF" ></span>
+                            <label class="form-check-label" for="femenino">
+                                Femenino
+                            </label>
+                            </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="Sexo" id="femenino" value="F" >
-                                <label class="form-check-label" for="femenino">
-                                    Femenino
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                <input class="form-check-input" type="radio" name="Sexo" id="masculino" value="M">
-                                <label class="form-check-label" for="masculino">
-                                    Masculino
-                                </label>
-                                </div>
-                           <!--<span>Femenino</span>  <input id="val" type="radio" name="Sexo" value="F"checked>
-                           <span> Masculino</span> <input id="val" type="radio" name="Sexo" value="M">
-                           -->
-                        <br>
-                        <br>
-                        </span>
+                            <input class="form-check-input" type="radio" name="Sexo" id="masculino" value="M">
+                            <span style="color: #ffa81c; font-size: 11px;" class="errorSexoM" ></span>
+                            <label class="form-check-label" for="masculino">
+                                Masculino
+                            </label>
+                            </div>
+                    <br>
+                    <br>
+                    </span>
 
-                        <p>
-                            <label for="contraseña">Contraseña:</label>
-                            <input id="password" type="password" name="contraseña" placeholder="Ingrese la contraseña">
-                        </p>
-                        <p>
-                            <label for="confir pass">Confirmar Contraseña:</label>
-                            <input id="password" type="password" name="confir pass" placeholder="Confirme la contraseña">
-                        </p>
-                        <p>
-                            <input id="submit" type="submit" value="Enviar">
-                        </p>
-                    </form>
+                    <p>
+                        <label for="contraseña">Contraseña:</label>
+                        <input id="password" type="password" name="contraseña" placeholder="Ingrese la contraseña">
+                        
+                    </p>
+                    <p>
+                        <label for="confir pass">Confirmar Contraseña:</label>
+                        <input id="password_confirm" type="password" name="confir pass" placeholder="Confirme la contraseña">
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorContrasenia" ></span>
+                      </p>
+                    <p>
+                        <!--<input id="submit" type="submit" value="Enviar">-->
+                        <button type="button" class="Registrarme">Registrarme!</button>
+                    </p>
+                </form>
                 </div>
             </div>
          </section>
