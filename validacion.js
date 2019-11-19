@@ -9,6 +9,7 @@
         var nombre = document.querySelector("input#nombre");
         var email = document.querySelector("input#email");
         var telefono = document.querySelector("input#telefono");
+        var provincias = document.querySelector("#prov");
         var fechaNacimiento = document.querySelector("input#FechaNac");
         var sexoF = document.querySelector("input#femenino");
         var sexoM = document.querySelector("input#masculino");
@@ -20,6 +21,7 @@
         var errorNombre = document.querySelector("span.errorNombre");
         var errorEmail = document.querySelector("span.errorEmail");
         var errorTelefono = document.querySelector("span.errorTelefono");
+        var errorProv = document.querySelector("span.errorProv");
         var errorFechaNacimiento = document.querySelector("span.errorFechaNac");
         var errorSexoF = document.querySelector("span.errorSexoF");
         var errorSexoM = document.querySelector("span.errorSexoM");
@@ -90,6 +92,15 @@
             errorTelefono.innerHTML = "";
             telefono.style.border = "2px solid #20db93";
         }
+            //campo Provincia
+
+            if(provincias.value == ""){
+                errorProv.innerHTML = "Debe seleccionar una Provincia";
+                provincias.style.border = "2px solid #ffa81c";
+            }else{
+                errorProv.innerHTML = "";
+                provincias.style.border = "2px solid #20db93";
+            }
             //campo fecha nacimiento
 
             //campo sexo femenino

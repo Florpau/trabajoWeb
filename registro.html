@@ -94,6 +94,7 @@
                       Provincia:
                       <select name="" id="prov">
                         <option value="">Selecciona una opcion</option>
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorProv" ></span>
                       </select>
                     </p>
                     <p>
@@ -202,7 +203,7 @@
            var opciProv = document.querySelector("#prov");
            for(var i = 0; i < datos.provincias.length; i++){
            
-            opciProv.innerHTML = opciProv.innerHTML + "<option>"+datos.provincias[i].nombre+"</option>";
+            opciProv.innerHTML = opciProv.innerHTML + "<option value='"+datos.provincias[i].id+"'>"+datos.provincias[i].nombre+"</option>";
            }
         })
         .catch(function(error){
