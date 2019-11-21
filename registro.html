@@ -87,7 +87,7 @@
                     </p>
                     <p>
                         <label for="telefono">Teléfono (opcional):</label>
-                        <input id="telefono" type="text" name="telefono" placeholder="código de área sin 0 y sin 15">
+                        <input id="telefono" type="text" pattern="^[0-9]*$" name="telefono" placeholder="código de área sin 0 y sin 15">
                         <span style="color: #ffa81c; font-size: 11px;" class="errorTelefono" ></span>
                     </p>
                     <p>
@@ -98,7 +98,7 @@
                     </p>
                     <p>
                         <label for="FechaNac">Fecha de Nacimiento:</label>
-                        <input type="date" name="FechaNac" min="1930-01-01" max="2019-01-01" step="2">
+                        <input id="fechaNacimiento" type="date" name="FechaNac" min="1930-01-01" max="2019-01-02" step="2" value="2019-01-01">
                         <span style="color: #ffa81c; font-size: 11px;" class="errorFechaNac" ></span>
                     </p>
                     <span>
@@ -192,25 +192,7 @@
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script>
-      window.addEventListener('load',function(){
-        fetch('https://apis.datos.gob.ar/georef/api/provincias')
-        .then(function(response){
-          return response.json();
-        })
-        .then(function(datos){
-           var opciProv = document.querySelector("#prov");
-           for(var i = 0; i < datos.provincias.length; i++){
-           
-            opciProv.innerHTML = opciProv.innerHTML + "<option>"+datos.provincias[i].nombre+"</option>";
-           }
-        })
-        .catch(function(error){
-          console.log(error);
-        });
-
-      })
-          </script>
+      
 
 
 </body>

@@ -2,18 +2,18 @@
  window.addEventListener('load', function(){
               
     //detectar cuando toco el boton de registro (se envía el formulario)
-     var botonRegistro = document.querySelector("button#submit");
+     var botonRegistro = document.getElementById("submit");
      botonRegistro.addEventListener('click',function(){
       
       //tomar los datos del formulario
-        var nombre = document.querySelector("input#nombre");
-        var email = document.querySelector("input#email");
-        var telefono = document.querySelector("input#telefono");
-        var fechaNacimiento = document.querySelector("input#FechaNac");
-        var sexoF = document.querySelector("input#femenino");
-        var sexoM = document.querySelector("input#masculino");
-        var pass = document.querySelector("input#password");
-        var pass_confirm = document.querySelector("input#password_confirm")
+        var nombre =document.getElementById("nombre");
+        var email = document.getElementById("email");
+        var telefono = document.getElementById("telefono");
+        var fechaNacimiento = document.getElementById("fechaNaciemiento");
+        var sexoF = document.getElementById("femenino");
+        var sexoM = document.getElementById("masculino");
+        var pass = document.getElementById("password");
+        var pass_confirm = document.getElementById("password_confirm")
         var errores = false;
 
        //los span de errores del formulario 
@@ -65,21 +65,26 @@
             errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacios.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
+        /*}else if(validateEmail(email.value)){
+            errorEmail.innerHTML = "El formato no es válido";
+            email.style.border = "2px solid #ffa81c";
+            errores = true;*/
         }else{
             errorEmail.innerHTML = "";
             email.style.border = "2px solid #20db93";
           }
+        
           //campo telefono
           if(telefono.value == ""){
             errorTelefono.innerHTML = "El teléfono es obligatorio.";
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
-          }else if(telefono.value.length < 3){
-            errorTelefono.innerHTML = "El teléfono debe contener al menos 3 caracteres.";
+          }else if(telefono.value.length < 8){
+            errorTelefono.innerHTML = "El teléfono debe contener al menos 8 caracteres.";
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
-        }else if(telefono.value.length > 10){
-            errorTelefono.innerHTML = "La extensión del teléfono no debe superar los 10 caracteres.";
+        }else if(telefono.value.length > 14){
+            errorTelefono.innerHTML = "La extensión del teléfono no debe superar los 14 caracteres.";
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (telefono.value.trim()== ""){
@@ -132,3 +137,25 @@
      })
 
     });
+    /*function validateEmail(email) {
+        var re = new RegExp("/^(([^<>()\[\]\\.,;:\s@\"]+(\.[^<>()\[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;");
+        return re.test(String(email).toLowerCase());
+    }*/
+
+    window.addEventListener('load',function(){
+        fetch('https://apis.datos.gob.ar/georef/api/provincias')
+        .then(function(response){
+          return response.json();
+        })
+        .then(function(datos){
+           var opciProv = document.querySelector("#prov");
+           for(var i = 0; i < datos.provincias.length; i++){
+           
+            opciProv.innerHTML = opciProv.innerHTML + "<option>"+datos.provincias[i].nombre+"</option>";
+           }
+        })
+        .catch(function(error){
+          console.log(error);
+        });
+
+      })
