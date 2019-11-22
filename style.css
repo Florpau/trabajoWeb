@@ -15,7 +15,12 @@ body{
 header.row.blanco {
     margin-top: 40px;
 }
-
+.divisor{
+    background-color: white;
+    width: 80%;
+    }
+    
+}
 a.navbar-brand{
     margin-left: 30px;
     
