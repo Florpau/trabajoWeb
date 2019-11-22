@@ -20,6 +20,10 @@ a.navbar-brand{
     margin-left: 30px;
     
 }
+.divisor{
+    background-color: white;
+    width: 80%;
+    }
 div.collapse ul li{
     margin-left: 50px;
   }

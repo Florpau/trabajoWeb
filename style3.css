@@ -29,6 +29,10 @@ background-color:#68ECA3;
 .dropdown-item{
     color: white;
 }
+.divisor{
+    background-color: white;
+    width: 80%;
+    }
 .list-group{
     margin-top: 20px;
 }
