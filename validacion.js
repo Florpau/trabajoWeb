@@ -6,17 +6,6 @@
      botonRegistro.addEventListener('click',function(){
       
       //tomar los datos del formulario
-<<<<<<< HEAD
-        var nombre = document.querySelector("input#nombre");
-        var email = document.querySelector("input#email");
-        var telefono = document.querySelector("input#telefono");
-        var provincias = document.querySelector("#prov");
-        var fechaNacimiento = document.querySelector("input#FechaNac");
-        var sexoF = document.querySelector("input#femenino");
-        var sexoM = document.querySelector("input#masculino");
-        var pass = document.querySelector("input#password");
-        var pass_confirm = document.querySelector("input#password_confirm")
-=======
         var nombre =document.getElementById("nombre");
         var email = document.getElementById("email");
         var telefono = document.getElementById("telefono");
@@ -25,7 +14,6 @@
         var sexoM = document.getElementById("masculino");
         var pass = document.getElementById("password");
         var pass_confirm = document.getElementById("password_confirm")
->>>>>>> b08fa920c70b306121f47de8c86bb7a13d54f489
         var errores = false;
 
        //los span de errores del formulario 
