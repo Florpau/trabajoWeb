@@ -9,6 +9,7 @@
         var nombre =document.getElementById("nombre");
         var email = document.getElementById("email");
         var telefono = document.getElementById("telefono");
+        var provincias = document.querySelector("#prov");
         var fechaNacimiento = document.getElementById("fechaNaciemiento");
         var sexoF = document.getElementById("femenino");
         var sexoM = document.getElementById("masculino");
