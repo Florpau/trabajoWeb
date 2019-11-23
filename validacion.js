@@ -9,6 +9,9 @@
         var nombre =document.getElementById("nombre");
         var email = document.getElementById("email");
         var telefono = document.getElementById("telefono");
+        var provincias = document.getElementById("prov");
+        var opcionesProvincias = provincias.options;
+        var opcionSelecProvincias = provincias.selectedIndex;
         var fechaNacimiento = document.getElementById("fechaNaciemiento");
         var sexoF = document.getElementById("femenino");
         var sexoM = document.getElementById("masculino");
@@ -20,13 +23,14 @@
         var errorNombre = document.querySelector("span.errorNombre");
         var errorEmail = document.querySelector("span.errorEmail");
         var errorTelefono = document.querySelector("span.errorTelefono");
+        var errorProv = document.querySelector("span.errorProv");
         var errorFechaNacimiento = document.querySelector("span.errorFechaNac");
         var errorSexoF = document.querySelector("span.errorSexoF");
         var errorSexoM = document.querySelector("span.errorSexoM");
         var errorPass = document.querySelector("span.errorContrasenia");
         
 
-      //por cada dato voy a validar (todo lo que se pueda)
+      //por cada dato voy a validar
       //campo nombre
         if(nombre.value == ""){
             errorNombre.innerHTML = "El nombre es obligatorio.";
@@ -95,38 +99,49 @@
             errorTelefono.innerHTML = "";
             telefono.style.border = "2px solid #20db93";
         }
+            //campo seleccione provincia
+        /*if(opcionesProvincias.selectedIndex == 0){
+            event.preventDefault();
+            errorProv.innerHTML = "Debes seleccionar una provincia";
+            prov.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else{
+            errorProv.innerHTML = "";
+        }*/
+            
+
             //campo fecha nacimiento
 
             //campo sexo femenino
             //campo sexo masculino
 
             //campo password
-            if(pass.value == ""){
-                errorPass.innerHTML = "La contraseña es obligatoria.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-              }else if(pass.value.length < 8){
-                errorPass.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else if(pass.value.length > 30){
-                errorPass.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else if (pass.value.trim()== ""){
-                errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else if(pass.value != pass_confirm.value){
-                errorPass.innerHTML = "Las contraseñas deben ser iguales.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else{
-                errorPass.innerHTML = "";
-                pass.style.border = "2px solid #20db93";
-            };
+        if(pass.value == ""){
+        errorPass.innerHTML = "La contraseña es obligatoria.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+            }else if(pass.value.length < 8){
+            errorPass.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if(pass.value.length > 30){
+            errorPass.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if (pass.value.trim()== ""){
+            errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if(pass.value != pass_confirm.value){
+            errorPass.innerHTML = "Las contraseñas deben ser iguales.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else{
+            errorPass.innerHTML = "";
+            pass.style.border = "2px solid #20db93";
+        };
             
-      //le aviso al usuario (maqueta) de a un error
+      //le aviso al usuario por cada error
 
       //si todo esta bien, le doy la bienvenida
               if(!errores){
