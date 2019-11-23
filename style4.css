@@ -36,12 +36,9 @@ background-color:#68ECA3;
 }
 
 /* estilo de los links de las preguntas*/
-.contenidofaq{
-    width: 80%;
-    margin-left: 10%;
-}
+
 .titulo-faq{
-    margin-top: 10%;
+    margin-top: 2%;
 }
 .banner-comprar img{
     width: 491px;
