@@ -47,6 +47,9 @@ background-color:#68ECA3;
     height: 30px;;
 }*/
 /*cuerpo iniciar sesión*/
+textarea{
+    width: 100%;
+}
 .encabezado{
     margin-top: 5%;
 }
@@ -59,16 +62,39 @@ form p label{
 form input{
     width: 100%;
 }
+.cart-empty{
+    margin-top: 120px;
+}
+.carttitle{
+    font-size: 30px;
+    text-align: center;
+}
+.parrafos{
+    text-align: center;
+}
+ .imgcart{
+     width: 25%;
+     margin-left: 38%;
+ }
 #submit{
     background: transparent;
     color: #68ECA3;
     border: 2px solid #68ECA3;
     border-radius: 6px;
+    height: 40px;
+    margin-top: 10px;
+
     
 }
 #submit:hover{
     background-color: #68ECA3;
     color: white;
+}
+.form-check-input{
+    width: 60%;
+}
+#prov{
+    width: 100%;
 }
 /*footer*/
 footer {
@@ -99,6 +125,19 @@ input.recordarme{
     #barr {
         display: none;
     }
+    .texcontenido{
+        width: 80%;
+        margin-left: 10%;
+    }
+    h3{
+        margin-left: 10%;
+    }
+     #val{
+         width: 400px;
+     }
+     div.buscador{
+         width: 100%;
+     }
     
     .barra-menu {
         display: block;
@@ -124,6 +163,9 @@ input.recordarme{
  }  
  }
  @media screen and (max-width:576px){
+    #val{
+        width: 400px;
+    }
     input.recordarme{
         width: 421px;
     }

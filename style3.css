@@ -57,6 +57,9 @@ form input{
 #val{
     width: 455px;
 }
+#prov{
+    width: 100%;
+}
 #submit{
     background: transparent;
     color: #68ECA3;
