@@ -123,26 +123,32 @@
         if(pass.value == ""){
         errorPass.innerHTML = "La contraseña es obligatoria.";
             pass.style.border = "2px solid #ffa81c";
+            pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
             }else if(pass.value.length < 8){
             errorPass.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
             pass.style.border = "2px solid #ffa81c";
+            pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(pass.value.length > 30){
             errorPass.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
             pass.style.border = "2px solid #ffa81c";
+            pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (pass.value.trim()== ""){
             errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
             pass.style.border = "2px solid #ffa81c";
+            pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(pass.value != pass_confirm.value){
             errorPass.innerHTML = "Las contraseñas deben ser iguales.";
             pass.style.border = "2px solid #ffa81c";
+            pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else{
             errorPass.innerHTML = "";
             pass.style.border = "2px solid #20db93";
+            pass_confirm.style.border = "2px solid #20db93";
         };
             
            //campo seleccione provincia
