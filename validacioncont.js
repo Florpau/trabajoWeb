@@ -99,8 +99,4 @@ window.addEventListener('load', function(){
      })
 
     });
-<<<<<<< HEAD
  
-=======
-  
->>>>>>> 23672d405941c9479747ea6caa31a5fd2b6f1a24
