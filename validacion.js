@@ -153,14 +153,6 @@
                 errorProv.innerHTML = "";
                 provincias.style.border = "2px solid #20db93";
             }
-      //campo fecha nacimiento
-     /* if (fechaNacimiento.value==""){
-             errorFechaNacimiento.innerHTML = "Debe completar una fecha";
-             telefono.style.border = "2px solid #ffa81c";
-         } else{
-             errorFechaNacimiento.innerHTML = "";
-             telefono.style.border = "2px solid #20db93";
-         };*/
 
 
 
@@ -174,10 +166,7 @@
      })
 
     });
-    /*function validateEmail(email) {
-        var re = new RegExp("/^(([^<>()\[\]\\.,;:\s@\"]+(\.[^<>()\[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;");
-        return re.test(String(email).toLowerCase());
-    }*/
+   
 
     window.addEventListener('load',function(){
         fetch('https://apis.datos.gob.ar/georef/api/provincias')
