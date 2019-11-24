@@ -10,10 +10,7 @@ window.addEventListener('load', function(){
         var mensaje= document.getElementById("message");
         var errores = false;
         var expresion = /\w+@\w+\.+[a-z]/;
-<<<<<<< HEAD
   
-=======
->>>>>>> 23672d405941c9479747ea6caa31a5fd2b6f1a24
 
        //los span de errores del formulario 
         var errorNombre = document.querySelector("span.errorNombre");
@@ -102,8 +99,4 @@ window.addEventListener('load', function(){
      })
 
     });
-<<<<<<< HEAD
  
-=======
-  
->>>>>>> 23672d405941c9479747ea6caa31a5fd2b6f1a24
