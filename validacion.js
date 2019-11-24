@@ -105,10 +105,10 @@
             //campo fecha nacimiento
      if (fechaNacimiento.value==""){
              errorFechaNacimiento.innerHTML = "Debe completar una fecha";
-             telefono.style.border = "2px solid #ffa81c";
+             fechaNacimiento.style.border = "2px solid #ffa81c";
          } else{
              errorFechaNacimiento.innerHTML = "";
-             telefono.style.border = "2px solid #20db93";
+             fechaNacimiento.style.border = "2px solid #20db93";
          }
 
          
