@@ -72,6 +72,47 @@ form input{
     background-color: #68ECA3;
     color: white;
 }
+.contenidofaq{
+    margin-top:90px;
+}
+.titulo-faq{
+    margin-top: 2%;
+}
+.banner-comprar img{
+    width: 491px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner-mdp img{
+    width: 491px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section {
+    text-align: justify;
+    margin: 15px;
+}.contenidofaq{
+    margin-top:90px;
+}
+main section a{
+    text-decoration: none;
+    color: black;
+}
+
+main section a:hover{
+    font-weight: 600;
+    color:black
+}
+
+.linkcorreo{
+    color: blue;
+}
+.linkcorreo:hover{
+    color:blue;
+}
+
 /*footer*/
 footer {
     margin-top: 100px;
@@ -115,6 +156,9 @@ h3{
      width: 80%;
      margin-left: 10%;
  }
+ #map-goo {
+    width: 100%;
+}
 }
 @media screen and (max-width:576px){
     #val{

@@ -9,6 +9,7 @@ window.addEventListener('load', function(){
         var email = document.getElementById("email");
         var mensaje= document.getElementById("message");
         var errores = false;
+        var expresion = /\w+@\w+\.+[a-z]/;
   
 
        //los span de errores del formulario 
@@ -39,8 +40,8 @@ window.addEventListener('load', function(){
             errorNombre.innerHTML = "";
             nombre.style.border = "2px solid #20db93";
           }
-          //campo email
-          if(email.value == ""){
+         //campo email
+         if(email.value == ""){
             errorEmail.innerHTML = "El correo electrónico es obligatorio.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
@@ -56,10 +57,10 @@ window.addEventListener('load', function(){
             errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacios.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
-        /*}else if(validateEmail(email.value)){
+        }else if(!expresion.test(email.value)){
             errorEmail.innerHTML = "El formato no es válido";
             email.style.border = "2px solid #ffa81c";
-            errores = true;*/
+            errores = true;
         }else{
             errorEmail.innerHTML = "";
             email.style.border = "2px solid #20db93";
@@ -98,7 +99,4 @@ window.addEventListener('load', function(){
      })
 
     });
-    /*function validateEmail(email) {
-        var re = new RegExp("/^(([^<>()\[\]\\.,;:\s@\"]+(\.[^<>()\[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;");
-        return re.test(String(email).toLowerCase());
-    }*/
+ 
