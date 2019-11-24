@@ -10,7 +10,8 @@ window.addEventListener('load', function(){
         var pass = document.getElementById("password");
         var pass_confirm = document.getElementById("password_confirm")
         var errores = false;
-  
+        var expresion = /\w+@\w+\.+[a-z]/;
+       
 
        //los span de errores del formulario 
         
@@ -36,10 +37,12 @@ window.addEventListener('load', function(){
             errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacios.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
-        /*}else if(validateEmail(email.value)){
+        }else if(!expresion.test(email.value)){
             errorEmail.innerHTML = "El formato no es válido";
             email.style.border = "2px solid #ffa81c";
-            errores = true;*/
+            errores = true;
+        
+        
         }else{
             errorEmail.innerHTML = "";
             email.style.border = "2px solid #20db93";
