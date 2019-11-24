@@ -45,6 +45,9 @@ background-color:#68ECA3;
     margin-top: 5%;
 }
 
+#map-goo {
+    width: 100%;
+}
 form p label{
     display: block
 }
@@ -156,9 +159,7 @@ h3{
      width: 80%;
      margin-left: 10%;
  }
- #map-goo {
-    width: 100%;
-}
+
 }
 @media screen and (max-width:576px){
     #val{
