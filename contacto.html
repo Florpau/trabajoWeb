@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
+    <script src="validacion.js"></script>
     <title>Wabi-Sabi Deco</title>
 </head>
 <body>
@@ -79,10 +80,12 @@
                         <p>
                             <label for="nombre">Nombre</label>
                             <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre completo aquí..">
+                            <span style="color: #ffa81c; font-size: 11px;" class="errorNombre" ></span>
                         </p>
                         <p>
                             <label for="email">E-Mail:</label>
-                            <input id="email" type="email" name="email" placeholder="ejemplo: usuario@ejemplo.com">
+                            <input id="email" type="email" name="email" placeholder="ejemplo: usuario@ejemplo.com" required!>
+                            <span style="color: #ffa81c; font-size: 11px;" class="errorEmail" ></span>
                         </p>
                         <p>
                             <label for="message">Mensaje (opcional):</label>
@@ -90,7 +93,7 @@
                             <input type="hidden" value="contact" name="type">
                         </p>
                          <p>
-                            <input id="submit" type="submit" value="Enviar">
+                            <input id="submit" type="button" value="Enviar">
                         </p>
                     </form>
                 </div>

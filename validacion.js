@@ -9,24 +9,26 @@
         var nombre =document.getElementById("nombre");
         var email = document.getElementById("email");
         var telefono = document.getElementById("telefono");
+        var provincias = document.querySelector("#prov");
         var fechaNacimiento = document.getElementById("fechaNaciemiento");
         var sexoF = document.getElementById("femenino");
         var sexoM = document.getElementById("masculino");
         var pass = document.getElementById("password");
         var pass_confirm = document.getElementById("password_confirm")
         var errores = false;
+  
 
        //los span de errores del formulario 
         var errorNombre = document.querySelector("span.errorNombre");
         var errorEmail = document.querySelector("span.errorEmail");
         var errorTelefono = document.querySelector("span.errorTelefono");
+        var errorProv = document.querySelector("span.errorProv");
         var errorFechaNacimiento = document.querySelector("span.errorFechaNac");
         var errorSexoF = document.querySelector("span.errorSexoF");
         var errorSexoM = document.querySelector("span.errorSexoM");
         var errorPass = document.querySelector("span.errorContrasenia");
-        
-
-      //por cada dato voy a validar (todo lo que se pueda)
+   
+      //por cada dato voy a validar
       //campo nombre
         if(nombre.value == ""){
             errorNombre.innerHTML = "El nombre es obligatorio.";
@@ -95,38 +97,52 @@
             errorTelefono.innerHTML = "";
             telefono.style.border = "2px solid #20db93";
         }
+         
+         
+
+
             //campo fecha nacimiento
+         
 
             //campo sexo femenino
             //campo sexo masculino
 
             //campo password
-            if(pass.value == ""){
-                errorPass.innerHTML = "La contraseña es obligatoria.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-              }else if(pass.value.length < 8){
-                errorPass.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else if(pass.value.length > 30){
-                errorPass.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else if (pass.value.trim()== ""){
-                errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else if(pass.value != pass_confirm.value){
-                errorPass.innerHTML = "Las contraseñas deben ser iguales.";
-                pass.style.border = "2px solid #ffa81c";
-                errores = true;
-            }else{
-                errorPass.innerHTML = "";
-                pass.style.border = "2px solid #20db93";
-            };
+        if(pass.value == ""){
+        errorPass.innerHTML = "La contraseña es obligatoria.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+            }else if(pass.value.length < 8){
+            errorPass.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if(pass.value.length > 30){
+            errorPass.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if (pass.value.trim()== ""){
+            errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if(pass.value != pass_confirm.value){
+            errorPass.innerHTML = "Las contraseñas deben ser iguales.";
+            pass.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else{
+            errorPass.innerHTML = "";
+            pass.style.border = "2px solid #20db93";
+        };
             
-      //le aviso al usuario (maqueta) de a un error
+           //campo seleccione provincia
+           if(provincias.value == ""){
+                errorProv.innerHTML = "Debe seleccionar una Provincia";
+                provincias.style.border = "2px solid #ffa81c";
+            }else{
+                errorProv.innerHTML = "";
+                provincias.style.border = "2px solid #20db93";
+            }
+
+
 
       //si todo esta bien, le doy la bienvenida
               if(!errores){
@@ -150,8 +166,8 @@
         .then(function(datos){
            var opciProv = document.querySelector("#prov");
            for(var i = 0; i < datos.provincias.length; i++){
+           opciProv.innerHTML = opciProv.innerHTML + "<option value='"+datos.provincias[i].id+"'>"+datos.provincias[i].nombre+"</option>";
            
-            opciProv.innerHTML = opciProv.innerHTML + "<option>"+datos.provincias[i].nombre+"</option>";
            }
         })
         .catch(function(error){
