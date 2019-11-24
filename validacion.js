@@ -119,7 +119,7 @@
          
             //campo sexo 
             if (sexoF.checked == true || sexoM.checked == true){
-
+                errorSexo.innerHTML = "";
             }else{
                 errorSexo.innerHTML = "Debe Seleccionar una opcion";
             }
