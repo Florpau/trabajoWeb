@@ -24,8 +24,8 @@
         var errorTelefono = document.querySelector("span.errorTelefono");
         var errorProv = document.querySelector("span.errorProv");
         var errorFechaNacimiento = document.querySelector("span.errorFechaNac");
-        var errorSexoF = document.querySelector("span.errorSexoF");
-        var errorSexoM = document.querySelector("span.errorSexoM");
+   
+        var errorSexo = document.querySelector("span.errorSexo");
         var errorPass = document.querySelector("span.errorContrasenia");
    
       //por cada dato voy a validar
@@ -104,8 +104,13 @@
             //campo fecha nacimiento
          
 
-            //campo sexo femenino
-            //campo sexo masculino
+         
+            //campo sexo 
+            if (sexoF.checked == true || sexoM.checked == true){
+
+            }else{
+                errorSexo.innerHTML = "Debe Seleccionar una opcion";
+            }
 
             //campo password
         if(pass.value == ""){
