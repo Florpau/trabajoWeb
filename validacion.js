@@ -10,7 +10,7 @@
         var email = document.getElementById("email");
         var telefono = document.getElementById("telefono");
         var provincias = document.querySelector("#prov");
-        var fechaNacimiento = document.getElementById("fechaNaciemiento");
+        var fechaNacimiento = document.getElementById("fechaNacimiento");
         var sexoF = document.getElementById("femenino");
         var sexoM = document.getElementById("masculino");
         var pass = document.getElementById("password");
@@ -75,6 +75,7 @@
             errorEmail.innerHTML = "";
             email.style.border = "2px solid #20db93";
           }
+     
         
           //campo telefono
           if(telefono.value == ""){
@@ -102,7 +103,13 @@
 
 
             //campo fecha nacimiento
-         
+     if (fechaNacimiento.value==""){
+             errorFechaNacimiento.innerHTML = "Debe completar una fecha";
+             telefono.style.border = "2px solid #ffa81c";
+         } else{
+             errorFechaNacimiento.innerHTML = "";
+             telefono.style.border = "2px solid #20db93";
+         }
 
          
             //campo sexo 
@@ -146,6 +153,15 @@
                 errorProv.innerHTML = "";
                 provincias.style.border = "2px solid #20db93";
             }
+      //campo fecha nacimiento
+     /* if (fechaNacimiento.value==""){
+             errorFechaNacimiento.innerHTML = "Debe completar una fecha";
+             telefono.style.border = "2px solid #ffa81c";
+         } else{
+             errorFechaNacimiento.innerHTML = "";
+             telefono.style.border = "2px solid #20db93";
+         };*/
+
 
 
 
