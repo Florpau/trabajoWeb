@@ -34,11 +34,11 @@ window.addEventListener('load', function(){
             email.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(email.value.trim()== ""){
-            errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacios.";
+            errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacíos.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(!expresion.test(email.value)){
-            errorEmail.innerHTML = "El formato no es válido";
+            errorEmail.innerHTML = "El formato no es válido.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
         
@@ -63,7 +63,7 @@ window.addEventListener('load', function(){
             pass.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (pass.value.trim()== ""){
-            errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
+            errorPass.innerHTML = "La contraseña no puede tener espacios vacíos.";
             pass.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(pass.value != pass_confirm.value){

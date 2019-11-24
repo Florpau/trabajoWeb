@@ -36,7 +36,7 @@
             nombre.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (nombre.value.trim()== ""){
-            errorNombre.innerHTML = "El nombre no puede tener espacios vacios.";
+            errorNombre.innerHTML = "El nombre no puede tener espacios vacíos.";
             nombre.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(nombre.value.length < 3){
@@ -65,11 +65,11 @@
             email.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(email.value.trim()== ""){
-            errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacios.";
+            errorEmail.innerHTML = "El correo electrónico no puede tener espacios vacíos.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(!expresion.test(email.value)){
-            errorEmail.innerHTML = "El formato no es válido";
+            errorEmail.innerHTML = "El formato no es válido.";
             email.style.border = "2px solid #ffa81c";
             errores = true;
         }else{
@@ -92,11 +92,11 @@
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (telefono.value.trim()== ""){
-            errorTelefono.innerHTML = "El teléfono no puede tener espacios vacios.";
+            errorTelefono.innerHTML = "El teléfono no puede tener espacios vacíos.";
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(!expresionTel.test(telefono.value)){
-            errorTelefono.innerHTML = "El campo sólo acepta valores numéricos"
+            errorTelefono.innerHTML = "El campo sólo acepta valores numéricos."
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
         }else{
@@ -109,7 +109,7 @@
 
             //campo fecha nacimiento
      if (fechaNacimiento.value==""){
-             errorFechaNacimiento.innerHTML = "Debe completar una fecha";
+             errorFechaNacimiento.innerHTML = "Debe completar una fecha.";
              fechaNacimiento.style.border = "2px solid #ffa81c";
          } else{
              errorFechaNacimiento.innerHTML = "";
@@ -121,7 +121,7 @@
             if (sexoF.checked == true || sexoM.checked == true){
                 errorSexo.innerHTML = "";
             }else{
-                errorSexo.innerHTML = "Debe Seleccionar una opcion";
+                errorSexo.innerHTML = "Debe seleccionar una opción.";
             }
 
             //campo password
@@ -141,7 +141,7 @@
             pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (pass.value.trim()== ""){
-            errorPass.innerHTML = "La contraseña no puede tener espacios vacios.";
+            errorPass.innerHTML = "La contraseña no puede tener espacios vacíos.";
             pass.style.border = "2px solid #ffa81c";
             pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
@@ -158,7 +158,7 @@
             
            //campo seleccione provincia
            if(provincias.value == ""){
-                errorProv.innerHTML = "Debe seleccionar una Provincia";
+                errorProv.innerHTML = "Debe seleccionar una Provincia.";
                 provincias.style.border = "2px solid #ffa81c";
             }else{
                 errorProv.innerHTML = "";
