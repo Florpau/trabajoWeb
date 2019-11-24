@@ -17,6 +17,7 @@
         var pass_confirm = document.getElementById("password_confirm")
         var errores = false;
         var expresion = /\w+@\w+\.+[a-z]/;
+        var expresionTel = /^([0-9])*$/;
 
        //los span de errores del formulario 
         var errorNombre = document.querySelector("span.errorNombre");
@@ -92,6 +93,10 @@
             errores = true;
         }else if (telefono.value.trim()== ""){
             errorTelefono.innerHTML = "El teléfono no puede tener espacios vacios.";
+            telefono.style.border = "2px solid #ffa81c";
+            errores = true;
+        }else if(!expresionTel.test(telefono.value)){
+            errorTelefono.innerHTML = "El campo sólo acepta valores numéricos"
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
         }else{
