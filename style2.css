@@ -83,8 +83,8 @@ form input{
     border-radius: 6px;
     height: 40px;
     margin-top: 10px;
+    vertical-align: top;
 
-    
 }
 #submit:hover{
     background-color: #68ECA3;
@@ -93,6 +93,8 @@ form input{
 .form-check-input{
     width: 60%;
 }
+ 
+
 #prov{
     width: 100%;
 }
