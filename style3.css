@@ -26,6 +26,9 @@ div.collapse ul li{
 .dropdown-item:hover{
 background-color:#68ECA3;
 }
+button p{
+    text-align: justify;
+}
 .dropdown-item{
     color: white;
 }
@@ -41,6 +44,22 @@ background-color:#68ECA3;
     border: 2px solid #68ECA3;
 }
 /*cuerpo*/
+.card .card-header{
+background-color: white;
+border-bottom: 1px solid white;
+}
+.question{
+    background: white;
+    border: white;
+}
+.btn-link{
+    color: black;
+}
+.card{
+    border: 1px solid white;
+   
+}
+
 .encabezado{
     margin-top: 5%;
 }
@@ -96,9 +115,8 @@ form input{
 section {
     text-align: justify;
     margin: 15px;
-}.contenidofaq{
-    margin-top:90px;
 }
+
 main section a{
     text-decoration: none;
     color: black;
@@ -115,6 +133,7 @@ main section a:hover{
 .linkcorreo:hover{
     color:blue;
 }
+
 
 /*footer*/
 footer {
