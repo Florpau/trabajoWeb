@@ -18,14 +18,16 @@
         var errores = false;
         var expresion = /\w+@\w+\.+[a-z]/;
         var expresionTel = /^([0-9])*$/;
-
-       //los span de errores del formulario 
+        var expresionTel1= /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
+      
+      
+        //los span de errores del formulario 
         var errorNombre = document.querySelector("span.errorNombre");
         var errorEmail = document.querySelector("span.errorEmail");
         var errorTelefono = document.querySelector("span.errorTelefono");
         var errorProv = document.querySelector("span.errorProv");
         var errorFechaNacimiento = document.querySelector("span.errorFechaNac");
-   
+        var errorPass2= document.querySelector("span.errorContrasenia2");
         var errorSexo = document.querySelector("span.errorSexo");
         var errorPass = document.querySelector("span.errorContrasenia");
    
@@ -96,10 +98,16 @@
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
         }else if(!expresionTel.test(telefono.value)){
-            errorTelefono.innerHTML = "El campo sólo acepta valores numéricos."
+            errorTelefono.innerHTML = "El campo sólo acepta valores numéricos.";
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
-        }else{
+        }else if (!expresionTel1.test(telefono.value)){
+            errorTelefono.innerHTML = "escriba el numero sin 0 y sin 15. ";
+            telefono.style.border = "2px solid #ffa81c";
+            errores = true;
+
+        }else{ 
+
             errorTelefono.innerHTML = "";
             telefono.style.border = "2px solid #20db93";
         }
@@ -126,32 +134,37 @@
 
             //campo password
         if(pass.value == ""){
-        errorPass.innerHTML = "La contraseña es obligatoria.";
-            pass.style.border = "2px solid #ffa81c";
-            pass_confirm.style.border = "2px solid #ffa81c";
+       
+        errorPass2.innerHTML = "La contraseña es obligatoria.";
+        pass.style.border = "2px solid #ffa81c";
+            
             errores = true;
             }else if(pass.value.length < 8){
-            errorPass.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
+            
+            errorPass2.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
             pass.style.border = "2px solid #ffa81c";
-            pass_confirm.style.border = "2px solid #ffa81c";
+         
             errores = true;
         }else if(pass.value.length > 30){
-            errorPass.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
+           
+            errorPass2.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
             pass.style.border = "2px solid #ffa81c";
-            pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (pass.value.trim()== ""){
-            errorPass.innerHTML = "La contraseña no puede tener espacios vacíos.";
+           
+            errorPass2.innerHTML = "La contraseña no puede tener espacios vacíos.";
             pass.style.border = "2px solid #ffa81c";
-            pass_confirm.style.border = "2px solid #ffa81c";
+            
             errores = true;
         }else if(pass.value != pass_confirm.value){
-            errorPass.innerHTML = "Las contraseñas deben ser iguales.";
+              errorPass.innerHTML = "Las contraseñas deben ser iguales.";
+              errorPass2.innerHTML = "Las contraseñas deben ser iguales.";
             pass.style.border = "2px solid #ffa81c";
             pass_confirm.style.border = "2px solid #ffa81c";
             errores = true;
         }else{
             errorPass.innerHTML = "";
+            errorPass2.innerHTML = "";
             pass.style.border = "2px solid #20db93";
             pass_confirm.style.border = "2px solid #20db93";
         };

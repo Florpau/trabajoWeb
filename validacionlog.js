@@ -66,13 +66,11 @@ window.addEventListener('load', function(){
             errorPass.innerHTML = "La contraseña no puede tener espacios vacíos.";
             pass.style.border = "2px solid #ffa81c";
             errores = true;
-        }else if(pass.value != pass_confirm.value){
-            errorPass.innerHTML = "Las contraseñas deben ser iguales.";
-            pass.style.border = "2px solid #ffa81c";
-            errores = true;
-        }else{
+      
+        }else  {
             errorPass.innerHTML = "";
             pass.style.border = "2px solid #20db93";
+            
         };
             
         
