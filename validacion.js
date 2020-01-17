@@ -18,7 +18,7 @@
         var errores = false;
         var expresion = /\w+@\w+\.+[a-z]/;
         var expresionTel = /^([0-9])*$/;
-        var expresionTel1= /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
+        var expresionTel1= /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
       
       
         //los span de errores del formulario 
