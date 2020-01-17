@@ -19,7 +19,7 @@
         var expresion = /\w+@\w+\.+[a-z]/;
         var expresionTel = /^([0-9])*$/;
         var expresionTel1= /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
-      
+        var expresionTel2 = /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
       
         //los span de errores del formulario 
         var errorNombre = document.querySelector("span.errorNombre");
@@ -105,6 +105,14 @@
             errorTelefono.innerHTML = "escriba el numero sin 0 y sin 15. ";
             telefono.style.border = "2px solid #ffa81c";
             errores = true;
+             
+        }else if (!expresionTel2.test(telefono.value)){
+            errorTelefono.innerHTML = "escriba el numero sin 0 y sin 15. ";
+            telefono.style.border = "2px solid #ffa81c";
+            errores = true;
+
+
+
 
         }else{ 
 
