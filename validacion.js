@@ -142,24 +142,24 @@
 
             //campo password
         if(pass.value == ""){
-       
+            errorPass.innerHTML = "";
         errorPass2.innerHTML = "La contraseña es obligatoria.";
         pass.style.border = "2px solid #ffa81c";
             
             errores = true;
             }else if(pass.value.length < 8){
-            
+                errorPass.innerHTML = "";
             errorPass2.innerHTML = "La contraseña debe contener al menos 8 caracteres.";
             pass.style.border = "2px solid #ffa81c";
          
             errores = true;
         }else if(pass.value.length > 30){
-           
+            errorPass.innerHTML = "";
             errorPass2.innerHTML = "La extensión de la contraseña no debe superar los 30 caracteres.";
             pass.style.border = "2px solid #ffa81c";
             errores = true;
         }else if (pass.value.trim()== ""){
-           
+            errorPass.innerHTML = "";
             errorPass2.innerHTML = "La contraseña no puede tener espacios vacíos.";
             pass.style.border = "2px solid #ffa81c";
             
