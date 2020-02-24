@@ -20,7 +20,8 @@
         var expresionTel = /^([0-9])*$/;
         var expresionTel1= /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
         var expresionTel2 = /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
-      
+        
+
         //los span de errores del formulario 
         var errorNombre = document.querySelector("span.errorNombre");
         var errorEmail = document.querySelector("span.errorEmail");
@@ -30,6 +31,7 @@
         var errorPass2= document.querySelector("span.errorContrasenia2");
         var errorSexo = document.querySelector("span.errorSexo");
         var errorPass = document.querySelector("span.errorContrasenia");
+        
    
       //por cada dato voy a validar
       //campo nombre
@@ -186,8 +188,7 @@
                 provincias.style.border = "2px solid #20db93";
             }
 
-
-
+         
 
       //si todo esta bien, le doy la bienvenida
               if(!errores){

@@ -76,64 +76,95 @@
                      </div>
             <div class="row">
                 <div class="formulario offset-md-3 col-md-6">
-                  <form action="validar.php" method="POST">
+                  <form action="" method="POST">
                     <p>
+                        <h4><strong>Datos de contacto</strong></h4>
                         <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre completo aquí..">
+                        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre completo aquí.." style="border-radius: .25rem; border: 1px solid #ced4da;padding: .375rem .75rem;">
                         <span style="color: #ffa81c; font-size: 11px;" class="errorNombre" ></span>
                     </p>
                     <p>
                         <label for="email">E-Mail:</label>
-                        <input id="email" type="email" name="email" value="" placeholder="ejemplo: usuario@ejemplo.com" required!>
-                        <span style="color: #ffa81c; font-size: 11px;" class="errorEmail" ></span>
+                        <input id="email" type="email" name="email" value="" placeholder="ejemplo: usuario@ejemplo.com" required! style="border-radius: .25rem; border: 1px solid #ced4da;padding: .375rem .75rem;">
+                        <span style="color: #ffa81c; font-size: 11px;" class="errorEmail " ></span>
                     </p>
                     <p>
                         <label for="telefono">Teléfono:</label>
-                        <input id="telefono" type="text" pattern="^[0-9]*$" name="telefono" placeholder="código de área sin 0 y sin 15">
+                        <input id="telefono" type="text" pattern="^[0-9]*$" name="telefono" placeholder="código de área sin 0 y sin 15" style="border-radius: .25rem; border: 1px solid #ced4da;padding: .375rem .75rem;">
                         <span style="color: #ffa81c; font-size: 11px;" class="errorTelefono" ></span>
                     </p>
-                    <p>
-                        <label for="EntregaProducto">Elegí como obtener tu pedido:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="envio" id="domicilio" value="aDom">
+                    <br>
+                    <br>
+                        <h4><strong>Datos de entrega</strong></h4>
+                        <div class="form-row">
+                          <div class="col-md-8 mb-3">
+                            <label for="domicilio">Domicilio:</label>
+                            <input id="domicilio" type="text" class="form-control" name="domicilio" placeholder="Ingrese Calle..." required>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="alturaDom">Número:</label>
+                            <input type="number" class="form-control" id="alturaDom"  name="alturaDom" placeholder="Ingrese altura..." required>
                             
-                            <label class="form-check-label" for="domicilio">
-                                A domicilio
-                            </label>
-                            <br>
-                            <span style="color: #ffa81c; font-size: 11px;" class="errorRetiro" ></span>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="envio" id="retiroLocal" value="rLoc">
-                                
-                                <label class="form-check-label" for="retiroLocal">
-                                    Retiro en local
-                                </label>
-                                <br>
-                                <span style="color: #ffa81c; font-size: 11px;" class="errorRetiro" ></span>
-                            </div>
-                    </p>
-                    <p>
-                      Provincia:
-                      <select name="" id="prov">
-                        <option value="">Selecciona una opción</option>
-                    </select>
+                          </div>
+                          
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationServer03">Localidad</label>
+                            <input type="text" class="form-control" id="localidad" placeholder="Ingrese localidad..." required>
+                            
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="CPostal">Localidad</label>
+                            <select class="custom-select" id="prov" required>
+                              <option selected disabled value="">Seleccione una provincia...</option>
+                            </select>
+                            
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="CPostal">Código Postal</label>
+                            <input type="number" class="form-control" id="codigoPostal" placeholder="Ejemplo: 1406..." required>
+                            
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          
+                        </div>
+                        
+                    
                     <span style="color: #ffa81c; font-size: 11px;" class="errorProv" ></span>
-                    </p>
-                   
-
+                    <h4><strong>Método de pago</strong></h4>
+                    <div class="col-md-12 mb-3">
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tarjeta" id="Visa" value="V">
+                            <label class="form-check-label" for="Visa">
+                                Visa Crédito
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tarjeta" id="MasterCard" value="MC">
+                            <label class="form-check-label" for="MasterCard">
+                                MasterCard Crédito
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tarjeta" id="Amex" value="Amx">
+                            <label class="form-check-label" for="Amex">
+                                AmericanExpress
+                            </label>
+                        </div>
+                        <br>
+                        <div class="col-md-3 mb-3">
+                            <label for="Cuotas"><strong>Cuotas:</strong></label>
+                            <input type="number" class="form-control" id="cuotas" min="3" max="12" step="3" placeholder="Ej: 3, 6, 9, 12" required>
+                            
+                          </div>
+                        
+                      </div>
+                      <br>
                     <p>
-                        <label for="contraseña">Contraseña:</label>
-                        <input id="password" type="password" name="contraseña" placeholder="Ingrese la contraseña">
-                        <span style="color: #ffa81c; font-size: 11px;" class="errorContrasenia2" ></span>
-                    </p>
-                    <p>
-                        <label for="confir pass">Confirmar Contraseña:</label>
-                        <input id="password_confirm" type="password" name="confir pass" placeholder="Confirme la contraseña">
-                        <span style="color: #ffa81c; font-size: 11px;" class="errorContrasenia" ></span>
-                      </p>
-                    <p>
-                        <input id="submit" type="button" value="Enviar">
+                        <input id="submit" type="button" value="Comprar">
                         <!--<button type="button" class="Registrarme">Registrarme!</button>-->
                     </p>
                 </form>
